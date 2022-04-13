@@ -11,7 +11,7 @@ describe('root', () => {
             .get('/')
             .expect(200)
             .then((res) => {
-                expect(res.text).toContain('Welcome to world!!!');
+                expect(res.text).toContain('Hello world!!!its working');
                 done();
             }).catch(err => done(err));;
     });
